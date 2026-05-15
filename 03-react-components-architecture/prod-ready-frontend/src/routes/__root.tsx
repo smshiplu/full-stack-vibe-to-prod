@@ -8,8 +8,9 @@ export const Route = createRootRoute({
           <h1 className="text-5xl">Prod Ready Architecture</h1>
           <nav className="text-2xl space-x-4 m-2">
             <Link to="/" className="[&.active]:font-bold">Home</Link>
-            <Link to="/components-playground" className="[&.active]:font-bold">Playground</Link>
             <Link to="/about"  className="[&.active]:font-bold">About</Link>
+            <Link to="/components-playground" className="[&.active]:font-bold">Playground</Link>
+            <Link to="/composition" className="[&.active]:font-bold">Composition</Link>
           </nav>
         </header>
         <main className="p-6">
