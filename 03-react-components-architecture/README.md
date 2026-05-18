@@ -22,7 +22,7 @@ Check out the [Task File](./task.md)
 <br/>
 
 - Capital Letters: What happens if you define a custom component as function myButton() { ... } and try to render it as `<myButton />` Why?
-> When we write a React component in lowercase `myButton()`, React treats it as a standard HTML tag. JSX parser tells browser to create a HTML tag `<myButton />`. But there is no tag `<myButton />` exists among web components. So the code fails.
+> When a React component is written in lowercase `myButton()`, React treats it as a standard HTML tag. JSX parser tells browser to create a HTML tag `<myButton />`. But there is no tag `<myButton />` exists among web components. So the code fails.
 
 <br/>
 
@@ -30,3 +30,15 @@ Check out the [Task File](./task.md)
 > When there are no comments, `comments.length` evaluates to 0, which is a falsy value. However, in JavaScript, the expression `0 && <span>Comments</span>` will still evaluate to 0, and React will render it as a string "0" on the screen. To avoid this issue, we can use a ternary operator instead: `{comments.length > 0 ? <span>Comments</span> : null}`. This way, if there are no comments, it will render `null` instead of 0.
 
 
+```bash
+**Components Assignment Submission**
+
+**Part 1: Quiz Answers**
+1. JSX is JavaScript XML, where browsers are made to read and redder HTML, CSS JavaScript only as long as the compilers of vite or bebel convert JSX `<h1 className="title">` into a valid JavaScript.
+2. When a React component is written in lowercase `myButton()`, React treats it as a standard HTML tag. JSX parser tells browser to create a HTML tag `<myButton />`. But there is no tag `<myButton />` exists among web components. So the code fails.
+3. When there are no comments, `comments.length` evaluates to 0, which is a falsy value. However, in JavaScript, the expression `0 && <span>Comments</span>` will still evaluate to 0, and React will render it as a string "0" on the screen. To avoid this issue, we can use a ternary operator instead: ``{comments.length > 0 ? <span>Comments</span> : null}``. This way, if there are no comments, it will render `null` instead of 0.
+
+**Part 2: The Composition Challenge**
+🔗 GitHub Repo Link: https://github.com/smshiplu/full-stack-vibe-to-prod/tree/df38e672d458464280bd02a2dc2c9bf7d2184ef9/03-react-components-architecture
+
+```
