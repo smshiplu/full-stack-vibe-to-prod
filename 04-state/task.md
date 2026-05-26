@@ -50,6 +50,5 @@ Head over to the tapaScript Discord server and use the template:
 3. `const [total, setTotal] = useState(todos.length)` Here the total state is unnecessary and it increases the redundant code and causes extra re-renders and tough to maintain the components. To fix the issue we can implement the Derive state solutions. Derive state is, in React any value of a state or a prop which is being calculate during rendering or on the fly using `const total = todos.length`. 
 
 **Part 2: The Shopping Cart**
-🔗 GitHub Repo Link: [Link to your repo showing your new files]
+🔗 GitHub Repo Link: https://github.com/smshiplu/full-stack-vibe-to-prod/tree/b7b298484eff8f3c3566e30fdc88f0307203aa86/04-state
 ```
-[![day-04](./chrome-capture-2026-05-18.gif)]
