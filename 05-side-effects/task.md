@@ -47,12 +47,9 @@ Head over to the tapaScript Discord server and use the template:
 **Effect Assignment Submission**
 
 **Part 1: Quiz Answers**
-
-1. `useEffect` handles the side effects that work like fetching data, local storage management, etc., which are not related to the UI rendering part. If the React engine starts executing `useEffect` before the UI paint and doesn't wait for the UI to be painted, it would cause performance issues like a frozen UI. Because we know JavaScript is single-threaded, the execution of the `useEffect` code would block the main thread. Therefore, the UI would get frozen.
-
-2. This code will trigger an infinite loop and crash teh application. When the component mounts,  `count` is `0` and the effects run setting `count` to `1`. Because the count is listed in the dependency array `[count]` this state change forces the component to re-render and immediately `triggers` the useEffect again. The effect then sets count to 2, which triggers another render and another effect execution, repeating the cycle infinitely.
-
-3. Putting an array `[1, 2, 3]` directly is very dangerous; It causes infinite re-renders. JavaScript compares primitive values like strings, numbers, and booleans by their value. But when it comes to objects and arrays, JavaScript compares them by their reference memory address. But in every render, the array `[1, 2, 3]` in the dependency array will be created from scratch, and a new memory reference will be created for that array. So React will not find the exact memory reference to compare the changes of the array `[1, 2, 3]`. If this `useEffect` happens to update state, the app will fall into an infinite loop.
+1. [Your answer on Timing]
+2. [Your answer on the Infinite Loop]
+3. [Your answer on Reference Equality]
 
 **Part 2: The Stopwatch Challenge**
 🔗 GitHub Repo Link: [Link to your repo showing your new files]
