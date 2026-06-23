@@ -1,4 +1,4 @@
-import type { Comments, CreatorStats, VideoStats } from "@/features/dashboard/types";
+import type { Comments, CreatorStats, VideoStats } from "../features/dashboard/types";
 
 export const fetchStats = ():Promise<CreatorStats[]> => {
   return new Promise((resolve, reject) => {
